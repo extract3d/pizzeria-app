@@ -1,0 +1,269 @@
+body {
+	display: block;
+	margin: 0;
+	font-size: 16px;
+	font-family: "Monaco", monospace;
+	background: url(../images/pizzeria.png) no-repeat center fixed;
+	background-size: cover
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 60px;
+	font-variant: small-caps;
+	margin-top: 10px;
+	margin-bottom: 0;
+	text-align: center;
+	color: #fff;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5)
+}
+
+h2 {
+	font-weight: 900;
+	font-size: 30px;
+	font-variant: small-caps;
+	margin-top: 10px;
+	margin-bottom: 0;
+	text-align: left;
+	color: #000
+}
+
+h3 {
+	text-align: left;
+	font-weight: 900;
+	font-size: 40px;
+	font-variant: small-caps;
+	margin-top: 10px;
+	margin-bottom: 0;
+	color: #000
+}
+
+form {
+	margin: 50px auto;
+	background-color: #FFF;
+	padding: 50px auto;
+	text-align: center;
+	width: 1000px;
+	border-radius: 17px
+}
+
+div.info {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: max-content max-content;
+	grid-gap: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px
+}
+
+div.info label {
+	text-align: left
+}
+
+img {
+	width: 300px
+}
+
+label {
+	font-weight: 900;
+	font-size: 30px;
+	font-variant: small-caps;
+	margin-top: 10px;
+	margin-bottom: 0;
+	text-align: center;
+	color: #000
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 6px 20px;
+	margin: 10px 0;
+	box-sizing: border-box
+}
+
+input[type=number] {
+	width: 100%;
+	padding: 6px 20px;
+	margin: 10px 0;
+	box-sizing: border-box
+}
+
+fieldset {
+	margin: 50px auto
+}
+
+legend {
+	font-weight: 900;
+	font-size: 30px;
+	font-variant: small-caps;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	color: #000
+}
+
+.topnav {
+	background-color: #333;
+	overflow: hidden
+}
+
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black
+}
+
+.topnav a.active {
+	background-color: #d83526;
+	color: white
+}
+
+.myButton {
+	background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	background-color: #fe1a00;
+	border-radius: 17px;
+	border: 1px solid #d83526;
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	font-family: Courier New;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 13px 38px;
+	margin: 10px auto 20px auto;
+	text-decoration: none
+}
+
+.myButton:hover {
+	background: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	background-color: #ce0100
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px
+}
+
+.singlePizza {
+	grid-column: 1;
+	margin: 20px 100px;
+	order: 3
+}
+
+.toppings {
+	text-align: left;
+	font-weight: 900;
+	font-size: 20px;
+	font-variant: small-caps;
+	margin-top: 10px;
+	margin-bottom: 0;
+	color: rgba(0, 0, 0, 0.7)
+}
+
+.pizza-images input {
+	margin: 0;
+	padding: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none
+}
+
+.capricciosa {
+	background-image: url(/images/capricciosa.png)
+}
+
+.margherita {
+	background-image: url(/images/margherita.png)
+}
+
+.mushroom {
+	background-image: url(/images/mushroom.png)
+}
+
+.mexican {
+	background-image: url(/images/mexican.png)
+}
+
+.pepperoni {
+	background-image: url(/images/pepperoni.png)
+}
+
+.vegetarian {
+	background-image: url(/images/vegetarian.png)
+}
+
+.pizza-images input:checked+.photo {
+	-webkit-filter: none;
+	-moz-filter: none;
+	filter: none
+}
+
+.photo {
+	cursor: pointer;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	-webkit-transition: all 100ms ease-in;
+	-moz-transition: all 100ms ease-in;
+	transition: all 100ms ease-in;
+	-webkit-filter: brightness(1.2) opacity(.7);
+	-moz-filter: brightness(1.2) opacity(.7);
+	filter: brightness(1.2) opacity(.7)
+}
+
+.photo:hover {
+	-webkit-filter: opacity(.9);
+	-moz-filter: opacity(.9);
+	filter: opacity(.9)
+}
+
+.order {
+	background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	background-color: #fe1a00;
+	border-radius: 17px;
+	border: 1px solid #d83526;
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	font-family: Courier New;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 13px 38px;
+	margin: 10px auto 20px auto;
+	text-decoration: none
+}
+
+.order:hover {
+	background: linear-gradient(to bottom, #ce0100 5%, #d83526 100%);
+	background-color: #ce0100
+}
+
+.order:active {
+	position: relative;
+	top: 1px
+}
+
+#new {
+	display: flex;
+	background-color: #FFF;
+	flex-wrap: wrap;
+	align-content: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: 50px auto
+}
+
+#chili {
+	width: 40px;
+	padding-left: 10px
+}

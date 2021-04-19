@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="./styles/style.css">
+      <div class="topnav">
+         <a class="active" href="./home.html">HOME</a>
+         <a href="./form.html">NEW PIZZA</a>
+         <a href="./menu.html">PIZZA MENU</a>
+      </div>
+      <div id="button-group">
+         <button class="order" onclick=ascendingByName("div.singlePizza");>SORT BY NAME A-Z</button>
+         <button class="order" onclick=descendingByName("div.singlePizza");>SORT BY NAME Z-A</button>
+         <button class="order" id="pricedec" data-order="descendingByPrice">SORT BY PRICE HIGH-LOW</button>
+         <button class="order" id="priceasc" data-order="ascendingByPrice">SORT BY PRICE LOW-HIGH</button>
+         <button class="order" id="heatdec" data-order="descendingByHeat">SORT BY HEAT HIGH-LOW</button>
+         <button class="order" id="heatasc" data-order="ascendingByHeat">SORT BY HEAT LOW-HIGH</button>
+      </div>
+      <h1>Menu</h1>
+      <script type="text/javascript" src="/scripts/script.js"></script>
+   </head>
+   <body onload=start("div.singlePizza") id="menu">
+      <div id="new">
+      </div>
+   </body>
+</html>

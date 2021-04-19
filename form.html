@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <div class="topnav">
+         <a class="active" href="./home.html">HOME</a>
+         <a href="./form.html">NEW PIZZA</a>
+         <a href="./menu.html">PIZZA MENU</a>
+      </div>
+      <link rel="stylesheet" href="./styles/style.css">
+      <h1>Add a new pizza to the menu</h1>
+   </head>
+   <body>
+      <form id="pizzaform" onsubmit="createPizza();">
+         <div class="info">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" maxlength="30" required>
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" min="0" step=".01" required>
+            <label for="heat">Heat (0-3):</label>
+            <input type="range" id="heat" name="heat" min="0" max="3">
+            <label for="toppings">Toppings:</label>
+            <input type="text" id="toppings" name="toppings" minlength="2" required>
+         </div>
+         <div class="pizza-images">
+            <legend>
+               Please select an image for your pizza:
+            </legend>
+            <input type="radio" name="photo" class="sr-only" id="capricciosa" value="/images/capricciosa.png">
+            <label class="photo capricciosa" for="capricciosa">
+            </label>
+            <input type="radio" name="photo" class="sr-only" id="margherita" value="/images/margherita.png">
+            <label class ="photo margherita" for="margherita">
+            </label>
+            <input type="radio" name="photo" class="sr-only" id="mushroom" value="/images/mushroom.png">
+            <label class="photo mushroom" for="mushroom">
+            </label>
+            <input type="radio" name="photo" class="sr-only" id="mexican" value="/images/mexican.png">
+            <label class="photo mexican" for="mexican">
+            </label>
+            <input type="radio" name="photo" class="sr-only" id="pepperoni" value="/images/pepperoni.png">
+            <label class="photo pepperoni" for="pepperoni">
+            </label>
+            <input type="radio" name="photo" class="sr-only" id="vegetarian" value="/images/vegetarian.png">
+            <label class="photo vegetarian" for="vegetarian">
+            </label>
+            </select>
+         </div>
+         <input class="myButton" type="submit" form="pizzaform" value="Add pizza">
+      </form>
+      <script type="text/javascript" src="/scripts/script.js"></script>
+   </body>
+</html>
